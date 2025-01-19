@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .ecg-container {
+    position: relative;
+    width: 100vw; /* 占满整个视口宽度 */
+    height: 800px; /* 设置心电图容器的高度 */
+    background-color: #000; /* 背景颜色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ecg-line {
+    position: absolute;
+    top: 50%; /* 垂直居中 */
+    left: 0; /* 起始点为左边缘 */
+    transform: translateY(-50%); /* 确保垂直居中 */
+    width: 100%; /* 占满整个容器宽度 */
+    height: 100%; /* 高度占满容器 */
+    background-color: transparent;
+  }
+  
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 500px;
+    color: #0f0;
+    display: none; /* 默认隐藏 */
+    animation: blink 0.5s infinite; /* 闪烁动画 */
+  }
+  
+  /* 定义闪烁动画 */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1; /* 完全可见 */
+    }
+    30%, 70% {
+        opacity: 1; /* 完全可见 */
+      }
+    50% {
+      opacity: 0; /* 隐藏 */
+    }
+  }
+  .correctandwrong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 500px;
+    display: none; /* 默认隐藏 */
+    animation: blink 0.4s 2; /* 闪烁动画 */
+  }
+  .smile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 500px;
+    display: none; /* 默认隐藏 */
+  }
+  
