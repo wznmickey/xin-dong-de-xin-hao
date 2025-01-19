@@ -70,4 +70,20 @@ body {
     font-size: 500px;
     display: none; /* 默认隐藏 */
   }
+  .video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* 视频宽度 */
+    height: auto; /* 高度根据宽度自动调整 */
+    z-index: 10; /* 保证视频在其他元素上层 */
+    background-color: black; /* 背景色 */
+  }
+  
+  .ecg-video {
+    width: 100%; /* 占满容器宽度 */
+    height: auto; /* 高度根据宽度调整 */
+    outline: none; /* 去掉视频的边框 */
+  }
   

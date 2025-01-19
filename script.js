@@ -160,6 +160,19 @@ document.addEventListener('keydown', (e) => {
     document.querySelector('.down-arrow').style.display = 'none'; // 显示向下箭头
     document.querySelector('.smile').style.display = 'none'; // 显示向下箭头
     isAlive = false;
+  }else if (key === 'v') {
+    // 隐藏其他内容
+    ecgLine.style.display = 'none';
+    document.querySelectorAll('.arrow, .correctandwrong, .smile').forEach((el) => {
+      el.style.display = 'none';
+    });
+
+    // 显示视频并播放
+    const videoContainer = document.querySelector('.video-container');
+    const video = document.querySelector('.ecg-video');
+
+    videoContainer.style.display = 'block'; // 显示视频容器
+    video.play(); // 播放视频
   }
   else{
     arrow.style.display = 'none'; // 隐藏箭头
