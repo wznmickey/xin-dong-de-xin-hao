@@ -35,7 +35,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 500px;
+    font-size: 800px;
     color: #0f0;
     display: none; /* 默认隐藏 */
     animation: blink 0.5s infinite; /* 闪烁动画 */
@@ -58,7 +58,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 500px;
+    font-size: 800px;
     display: none; /* 默认隐藏 */
     animation: blink 0.4s 2; /* 闪烁动画 */
   }
@@ -67,7 +67,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 500px;
+    font-size: 800px;
     display: none; /* 默认隐藏 */
   }
   .video-container {
