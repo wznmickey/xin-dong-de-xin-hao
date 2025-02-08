@@ -196,4 +196,4 @@ setInterval(() => {
     if (ecgLine.style.display === 'block') {
       updateECG(isAlive);
     }
-  }, 1000);
+  }, 600);
