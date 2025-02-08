@@ -183,7 +183,6 @@ document.addEventListener('keydown', (e) => {
     document.querySelector('.wrong').style.display = 'none'; // 隐藏上箭头
     document.querySelector('.down-arrow').style.display = 'none'; // 显示向下箭头
     document.querySelector('.smile').style.display = 'none'; // 显示向下箭头
-    updateECG(isAlive);
   }
 });
 
